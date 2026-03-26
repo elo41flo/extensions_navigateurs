@@ -1,0 +1,11 @@
+body {
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    padding: 8px;
+    width: 100%;
+}
