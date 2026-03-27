@@ -1,0 +1,17 @@
+.timer-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#timer {
+  position: absolute; /* Le texte vient se placer au centre du cercle */
+  font-size: 2.5rem;
+}
+
+.progress-ring__circle {
+  transition: stroke-dashoffset 0.3s; /* Pour que le mouvement soit fluide */
+  transform: rotate(-90deg); /* On fait partir le cercle du haut */
+  transform-origin: 50% 50%;
+}
