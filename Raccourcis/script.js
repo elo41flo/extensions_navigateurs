@@ -13,8 +13,9 @@ const shortcuts = [
     { keys: "CTRL + X", desc: "Couper"},
     { keys: "CTRL + T", desc: "Nouvel onglet" },
     { keys: "CTRL + W", desc: "Fermer l'onglet" },
-    { keys: "CTRL + SHIFT + T", desc: "rouvrir un onglet fermer" },
-    { keys: "CTRL + SHIFT + I", desc: "Inspecteur" }
+    { keys: "CTRL + SHIFT + T", desc: "Rouvrir un onglet fermer" },
+    { keys: "CTRL + SHIFT + I", desc: "Inspecteur" },
+    { keys: "WIN + .", desc: "emoji"}
 ];
 
 const listElement = document.getElementById('shortcut-list');
