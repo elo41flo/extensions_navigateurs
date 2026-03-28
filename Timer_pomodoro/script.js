@@ -1,6 +1,6 @@
 let timeLeft = 25 * 60;
 let isRunning = false;
-timerInterval = null; // On l'initialise à vide
+let timerInterval = null; // On l'initialise à vide
 
 const startBtn = document.getElementById('start');
 const pauseBtn = document.getElementById('pause');
@@ -21,18 +21,19 @@ function MiseAJour() {
 
 // Bouton démarrer
 startBtn.addEventListener('click', () => {
-    if (!isRunning) { // On ne lance le timer que s'il ne tourne pas déjà
+    if (!isRunning) { 
         isRunning = true;
+        // On s'assure de bien utiliser "timeLeft" avec le "L" majuscule
         timerInterval = setInterval(() => {
-            if (timeleft > 0) {
-                timeLeft--; // On enlève une seconde
-                MiseAJour(); // On rafraîchit l'affichage
+            if (timeLeft > 0) { // <-- CORRECTION ICI
+                timeLeft--; 
+                MiseAJour(); 
             } else {
                 clearInterval(timerInterval);
                 alert("C'est l'heure de la pause !");
                 isRunning = false;
             }
-        }, 1000); // 1000ms = 1 seconde
+        }, 1000);
     }
 });
 
