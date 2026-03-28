@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "CSS Debugger",
+    "version": "1.0",
+    "description": "Ajoute des bordures rouges pour debugguer le layout",
+    "permissions": ["activeTab", "scripting"],
+    "action": {
+        "defaulr_popup": "index.html"
+    }
+}
