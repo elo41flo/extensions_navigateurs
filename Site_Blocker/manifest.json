@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Focus Mode - Site Blocker",
+  "version": "1.0",
+  "permissions": [
+    "declarativeNetRequest", 
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "ruleset_1",
+      "enabled": true,
+      "path": "rules.json"
+    }]
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["blocked.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

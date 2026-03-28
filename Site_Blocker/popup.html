@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style_popup.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Focus Mode</h2>
+            <label class="switch">
+                <input type="checkbox" id="status-toggle" checked>
+                <span class="slider round"></span>
+            </label>
+        </header>
+
+        <div class="status-text">
+            Statut : <span id="status-label">Activé</span>
+        </div>
+
+        <hr>
+
+        <div class="site-list-container">
+            <h3>Sites restreints</h3>
+            <ul id="site-list">
+                <li>facebook.com</li>
+                <li>youtube.com</li>
+                <li>instagram.com</li>
+            </ul>
+        </div>
+
+        <p class="footer-note">Reste concentré, Elo ! 💻</p>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
